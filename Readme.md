@@ -1,3 +1,5 @@
+![Sample Counter Screen Shot](https://github.com/botwhytho/tiddlyCounter/blob/master/sampleCounter.png)
+
 The tiddlyCounter plugin is a general purpose Tally Counter built on top of [tiddlywiki](tiddlywiki.com)
 
 It is a macro you can add to any tiddler that creates buttons that increment a counter when you click on them. Currently, the total count for something is stored, as well as the time stamp for each occurrence. The time stamps are stored so that in future versions some stats can be calculated off of them.
