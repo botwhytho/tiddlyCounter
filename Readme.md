@@ -29,6 +29,6 @@ When you add the below macro to a tiddler and save it you will have three button
 Space for other notes/content. You can add this macro anywhere in a tiddler.
 ```
 
-If you create a counter named "Item1", 2 tiddlers will be created in the background that store the counter data: "Item1" & "Item1Data". Item1 will contain the current count and Item1Data will contain a JSON object with the time stamp of each occurrence of the counted event.
+If you create a counter named "Item1", 1 tiddler will be created in the background that stores the counter data named "Item1". Item1 will contain the current count in a field by that same name and will contain JSON data about the individual time of the readings in the tiddler body as it is a JSON data tiddler.
 
-To add/remove counters on a tiddler, just edit the tiddler that contains the macro and add/remove the item to the list of counters in the macro.
+To add/remove counters on a tiddler, just edit the tiddler that contains the macro and add/remove the item to the list of counters in the macro. The background data tiddler will not get deleted, just the button widget to increment it.
