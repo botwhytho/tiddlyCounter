@@ -25,10 +25,10 @@ exports.params = [
 Run the macro
 */
 
-exports.run = function(counterList)  {
-    var tmp = "";   
+exports.run = function(counterList) {
+    var tmp = "";
     counterList.split("|").forEach(function(element, index, array){
-    tmp = tmp + "<br><br>" + "<$button>" + element + "<$action-setfield $tiddler='" + element + "' text=<<plusOne '" + element + "'  'count'>> /><$action-setfield $tiddler='" + element + "Data' text=<<plusOne '" + element + "'  'data'>> type='application/json' /></$button>  {{" + element + "!!text}}";
+		tmp = tmp + "<br><br><$button>" + element + " | {{" + element + "!!count}} <$action-setfield $tiddler='" + element + "' $field='count' $value=<<plusOne '" + element + "' 'count'>> /><$action-setfield $tiddler='" + element + "' text=<<plusOne '" + element + "' 'data'>> type='application/json' /></$button>";
     })
     return tmp;
 }
