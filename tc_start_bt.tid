@@ -1,0 +1,8 @@
+\define tc_start_bt(td)
+<$button>
+<$set name="status" filter="[[$td$]has[created]]" value={{$td$!!status}} emptyValue="Start/Stop">
+<$text text=<<status>>/>
+</$set>
+<$action-setfield $tiddler="$td$" text=<<tc_start "$td$">> type='application/json' status="Started" />
+</$button>
+\end

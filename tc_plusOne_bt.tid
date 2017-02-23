@@ -1,0 +1,6 @@
+\define tc_plusOne_bt(td)
+<$button>
+$td$ | {{$td$!!count}}
+<$action-setfield $tiddler="$td$" text=<<tc_countData "$td$">> type='application/json' count=<<tc_increaseCount "$td$">> duration=<<tc_duration "$td$">> rate=<<tc_rate "$td$">> />
+</$button>
+\end

@@ -1,0 +1,6 @@
+\define tc_stop_bt(td)
+<$button>
+{{$td$!!status}}
+<$action-setfield $tiddler="$td$" text=<<tc_stop "$td$">> type='application/json' status="Stopped" duration=<<tc_duration "$td$">> rate=<<tc_rate "$td$">> />
+</$button>
+\end

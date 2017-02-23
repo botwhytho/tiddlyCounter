@@ -1,0 +1,8 @@
+\define tc_newItem(td)
+<$set name="tc_startStop" filter="[[$td$]status[Started]]" value=<<tc_stop_bt "$td$">> emptyValue=<<tc_start_bt "$td$">>>
+<<tc_startStop "$td$">>
+</$set>
+<$set name="tc_plusOne" filter="[[$td$]status[Started]]" value=<<tc_plusOne_bt "$td$">> emptyValue=<<tc_plusOne_disable "$td$">>>
+<<tc_plusOne "$td$">> {{$td$!!rate}} /hr
+</$set>
+\end
